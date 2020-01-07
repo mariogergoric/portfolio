@@ -1,0 +1,386 @@
+body {
+	background: url('slike/leaves.png');
+}
+/* ------ Zaglavlje / početak ------ */
+.zaglavlje {
+	height: 400px;
+	background: url('slike/cover.jpg') no-repeat;
+	background-size: cover;
+}
+.zaglavlje a {
+	color: #c71340;
+	font-size: 25pt;
+	text-decoration: none;
+	display: block;
+	margin-top: 30px;
+	margin-left: 30px;
+	font-family: 'Poppins', sans-serif;
+}
+}
+@media screen and (max-width: 575px) {
+	.zaglavlje {
+		height: 250px;
+	}
+	.zaglavlje p {
+		display: none;
+	}
+	.zaglavlje a {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		margin: 0;
+		font-size: 18pt;
+		font-family: 'Raleway', sans-serif;
+	}
+	.slider {
+		display: none;
+	}
+}
+/* ------ Zaglavlje / kraj ------ */
+
+/* ------ Navigacija / početak ------ */
+.navigacija {
+	height: 70px;
+	background-color: #ea1646;
+	font-family: 'Poppins', sans-serif;
+}
+.navigacija li {
+	display: inline;
+	margin-right: 40px;
+	list-style-type: none;
+}
+.navigacija li a {
+	line-height: 70px;
+	color: #f2f2f2;
+	text-decoration: none;
+	font-size: 18pt;
+	font-family: 'Poppins', sans-serif;
+}
+.navigacija .hamburger {
+	text-align: right;
+	font-size: 24pt;
+	line-height: 70px;
+	padding-right: 40px;
+	display: none;
+}
+.navigacija .main-menu {
+	margin-bottom: 0;
+}
+@media screen and (max-width:760px) {
+	.navigacija .hamburger {
+		display: block;
+	}
+	.navigacija .main-menu li {
+		border-top: 1px solid black;
+		display: block;
+		background-color: #F1C40F;
+	}
+	.navigacija {
+		height: auto;
+	}
+	.main-menu {
+		display: none;
+	}
+}
+@media screen and (min-width:761px) {
+	.main-menu {
+		display: block !important;
+	}
+}
+/* ------ Navigacija / kraj ------ */
+
+.slider .col {
+	padding-left: 0;
+	padding-right: 0;
+	margin-top: 40px;
+}
+.slider h2 {
+	font-size: 18pt;
+	text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;
+}
+.slider p {
+	font-size: 14pt;
+	font-family: 'Poppins', sans-serif;
+}
+.slider .carousel-caption {
+	background-color: rgba(0,0,0,0.4);
+	border-radius: 10px;
+}
+
+/* ------ Galerija / početak ------ */
+.galerija h1 {
+	font-size: 24pt;
+	text-align: center;
+	color: #cc0066;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	font-family: 'Raleway', sans-serif;
+}
+.galerija .slika .maska {
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+	transition: 1s ease;
+}
+.galerija .slika:hover .maska {
+	opacity: 0.7;
+}
+.galerija .slika .maska p {
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.galerija .slika {
+	padding: 0;
+}
+.galerija .maska a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+.galerija .maska .naziv-rada {
+	font-size: 18pt;
+	text-transform: uppercase;
+}
+.galerija .maska .kategorija {
+	font-size: 14pt;
+}
+.galerija .video {
+	align: center;
+}
+/* ------ Galerija / kraj ------ */
+
+/* ------ Kontakt / početak ------ */
+.kontakt {
+	background-color: #c71340;
+	padding: 50px 30px;
+	margin-top: 60px;
+}
+.kontakt h1 {
+	font-size: 24pt;
+	font-family: 'Raleway', sans-serif;
+	padding-bottom: 30px;
+	color: #f2f2f2;
+}
+.kontakt input[type=text],
+.kontakt input[type=email],
+.kontakt textarea {
+	border: 0;
+	border-radius: 0;
+}
+.kontakt input {
+	height: 50px;
+}
+.kontakt button[type=submit] {
+	background-color: #170420;
+	border: 0;
+	border-radius: 0;
+	width: 200px;
+	height: 50px;
+	font-family: 'Raleway', sans-serif;
+}
+@media screen and (max-width:575px) {
+	.kontakt button[type=submit] {
+		width: 100%;
+	}
+}
+.kontakt ::placeholder {
+	font-size: 14pt;
+	font-family: 'Raleway', sans-serif;
+}
+/* ------ Kontakt / kraj ------ */
+
+/* ------ Footer / početak ------ */
+.footer {
+	height: 250px;
+	background: url('slike/down.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	margin-top: 60px;
+}
+
+.footer .footer-content {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.footer ul {
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+.footer ul li {
+	display: inline;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.footer li a {
+	color: #fff;
+	font-size: 18pt;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+}
+@media screen and (max-width:767px) {
+	.footer ul li {
+		display: block;
+		text-align: center;
+	}
+}
+.footer p {
+	color: #fff;
+	width: 100%;
+	text-align: center;
+	margin:0;
+	margin-top: 30px;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* ------ Footer / kraj ------ */
+
+
+
+/* ------ O meni / početak ------ */
+.o-meni p {
+	color:#ffffff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 19pt;
+}
+#border {
+	 border-width: 6px; border-color: #c71340; border-style: ridge;
+}
+
+.o-meni h1,
+.vjestine h1 {
+	font-size: 24pt;
+	color: #cc0066;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	font-family: 'Raleway', sans-serif;
+}
+.vjestina {
+	height: 250px;
+}
+.vjestina.svijetlo-siva {
+	background-color: #ea1646;
+}
+.vjestina.tamno-siva {
+	background-color: #c71340;
+}
+@media screen and (max-width:767px) {
+	.vjestina:nth-child(odd) {
+		background-color: #F0F0F0;
+	}
+	.vjestina:nth-child(even) {
+		background-color: #E0E0E0;
+	}
+	.o-meni p:nth-child(1) {
+		margin-top: 40px;
+	}
+}
+.vjestina p {
+	color:#FFFFFF;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 14pt;
+	font-family: 'Poppins', sans-serif;
+}
+.no-spacing {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+/* ------ O meni / kraj ------ */
+
+/* ------ Članci / početak ------ */
+.clanci h1 {
+	text-transform: uppercase;
+	font-size: 24pt;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	font-family: 'Poppins', sans-serif;
+}
+.clanci .mt-60 {
+	margin-top: 60px;
+}
+.clanak h2 {
+	font-size: 24pt;
+	margin-bottom: 20px;
+	font-family: 'Poppins', sans-serif;
+}
+@media screen and (max-width:767px) {
+	.clanak h2 {
+		margin-top: 20px;
+	}
+}
+@media screen and (max-width:575px) {
+	.clanak h2 {
+		margin-top: 20px;
+		text-align: center;
+	}
+	.clanak p {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+/* ------ Članci / kraj ------ */
+
+
+/* ------ Društvene mreže / početak ------ */
+.social-profiles h1 {
+	font-size: 24pt;
+	text-align: center;
+	color: #cc0066;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	font-family: 'Raleway', sans-serif;
+}
+.social-profile {
+	height: 250px;
+}
+.social-profile.svijetlo-siva {
+	background-color: #ea1646;
+}
+.social-profile.tamno-siva {
+	background-color: #c71340;
+}
+@media screen and (max-width:767px) {
+	.social-profile:nth-child(odd) {
+		background-color: #F0F0F0;
+	}
+	.social-profile:nth-child(even) {
+		background-color: #E0E0E0;
+	}
+}
+.social-profile p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 32pt;
+}
+.social-profile p a {
+	color: #000;
+	text-decoration: none;
+}
+/* ------ Društvene mreže / kraj ------ */
